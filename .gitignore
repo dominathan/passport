@@ -14,3 +14,31 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore application configuration
+/config/application.yml
+.env
+
+# secret token
+.secret
+config/secrets.yml
+
+# additional
+.project
+*~
+
+# from Github Rails.gitignore
+*.rbc
+*.sassc
+.sass-cache
+capybara-*.html
+.rspec
+/public/system
+/coverage/
+/spec/tmp
+rerun.txt
+pickle-email-*.html
+/vendor/bundle
+=======
+# Versioning
+.rvmrc
