@@ -1,0 +1,2 @@
+module PotentialMembersHelper
+end
