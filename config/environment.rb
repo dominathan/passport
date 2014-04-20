@@ -5,15 +5,17 @@ require File.expand_path('../application', __FILE__)
 Rails.application.initialize!
 
 #using mandrill
-PassportFitnessDC::Application.configure do
-  config.action_mailer.smtp_settings = {
-    :address => "smtp.mandrillapp.com",
-    :port => 587, ## ports 587 and 2525 are also supported with STARTTLS
-    :enable_starttls_auto => true, #detects and uses STARTTLS
-    :user_name => ENV['MANDRILL_USERNAME'],
-    :password => ENV['MANDRILL_PASSWORD'],
-    :authentication => 'login', #'login' or 'plain'
-    :domain => 'heroku.com' #domain to identify your server when connecting
-  }
+# PassportFitnessDC::Application.configure do
+#   config.action_mailer.smtp_settings = {
+#     :address => "smtp.mandrillapp.com",
+#     :port => 587, ## ports 587 and 2525 are also supported with STARTTLS
+#     :enable_starttls_auto => true, #detects and uses STARTTLS
+#     :user_name => ENV['MANDRILL_USERNAME'],
+#     :password => ENV['MANDRILL_PASSWORD'],
+#     :authentication => 'login', #'login' or 'plain'
+#     :domain => 'heroku.com' #domain to identify your server when connecting
+#   }
 
-end
+# end
+
+#config.mandrill_mailer.default_url_options = {:host => 'localhost' }

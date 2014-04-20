@@ -21,7 +21,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 
 #add for mailing
-gem 'mandrill-rails'
+gem 'mandrill_mailer'
 
 
 
