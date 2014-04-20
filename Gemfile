@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.1.0.rc2'
 gem 'sqlite3'
+gem 'hirb' #easy database viewing
 
 #maybe add to assets group later
 #group :assets do
