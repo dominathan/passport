@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 
-gem 'rails', '4.1.0.rc2'
+gem 'rails', '4.0.2'
 gem 'sqlite3'
 gem 'hirb' #easy database viewing
 
@@ -22,6 +22,9 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 #add for mailing
 gem 'mandrill_mailer'
+gem 'mandrill-api'
+gem 'pry-debugger'
+gem 'figaro',     '~> 0.7.0'
 
 
 

@@ -1,4 +1,4 @@
-Rails.application.configure do
+PassportFitnessDC::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -36,14 +36,14 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
   config.action_mailer.default_url_options = {:host => 'localhost:3000'}
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default :charset => "utf-8"
 
    config.action_mailer.smtp_settings = {
-  :address   => "smtp.mandrillapp.com",
+  :address   => "smtp.gmail.com",
   :port      => 587,
   :enable_starttls_auto => true,
-  :user_name => ENV["MANDRILL_USERNAME"],
-  :password  => ENV["MANDRILL_API"]
+  :user_name => ENV['EMAIL_ACCOUNT'],
+  :password  => ENV['EMAIL_PASSWORD'],
+  :authentication => "plain"
 }
 
 
