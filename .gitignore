@@ -19,7 +19,8 @@
 .secret
 config/secrets.yml
 
-
+#application.rb because something is messing up the config file
+/config/application.rb
 
 # Ignore application configuration
 /config/application.yml
