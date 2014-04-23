@@ -7,8 +7,8 @@ class Notifier < ActionMailer::Base
   #   en.notifier.subscription_confirmation.subject
   #
   def subscription_confirmation(potential_member)
+    attachments.inline['passportfitnessdc.png'] = File.read('/Users/nathanhall/Desktop/PassportFitness/PassportFitnessDC/public/images/passportfitnessdc.png')
     @potential_member = potential_member
-
     mail to: "#{potential_member.first_name} <#{potential_member.email}>", subject: "Welcome to Passport Fitness D.C."
   end
 end

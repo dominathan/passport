@@ -36,13 +36,14 @@ PassportFitnessDC::Application.configure do
   # config.action_view.raise_on_missing_translations = true
   config.action_mailer.default_url_options = {:host => 'localhost:3000'}
   config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
 
    config.action_mailer.smtp_settings = {
   :address   => "smtp.gmail.com",
   :port      => 587,
   :enable_starttls_auto => true,
-  :user_name => ENV['EMAIL_ACCOUNT'],
-  :password  => ENV['EMAIL_PASSWORD'],
+  :user_name => ENV['MANDRILL_USERNAME'],
+  :password  => ENV['MANDRILL_API'],
   :authentication => "plain"
 }
 
