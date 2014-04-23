@@ -1,5 +1,6 @@
 class PotentialMembersController < ApplicationController
   before_action :set_potential_member, only: [:show, :edit, :update, :destroy]
+  include BootstrapFlashHelper
 
   # GET /potential_members
   # GET /potential_members.json
@@ -28,6 +29,8 @@ class PotentialMembersController < ApplicationController
 
     respond_to do |format|
       if @potential_member.save
+        Notifier.subscription_confirmation.deliver
+        flash[:success] = "You should receive an email shortly!"
         format.html { redirect_to @potential_member, notice: 'Potential member was successfully created.' }
         format.json { render :show, status: :created, location: @potential_member }
       else
