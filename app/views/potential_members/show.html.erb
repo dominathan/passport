@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @potential_member.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @potential_member.last_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @potential_member.email %>
+</p>
+
+<p>
+  <strong>Zip code:</strong>
+  <%= @potential_member.zip_code %>
+</p>
+
+<%= link_to 'Edit', edit_potential_member_path(@potential_member) %> |
+<%= link_to 'Back', potential_members_path %>
