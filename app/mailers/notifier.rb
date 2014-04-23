@@ -6,9 +6,9 @@ class Notifier < ActionMailer::Base
   #
   #   en.notifier.subscription_confirmation.subject
   #
-  def subscription_confirmation
-    @greeting = "Hi"
+  def subscription_confirmation(potential_member)
+    @potential_member = potential_member
 
-    mail to: "Partner-name <nathan.mh@gmail.com>", subject: "Test"
+    mail to: "#{potential_member.first_name} <#{potential_member.email}>", subject: "Welcome to Passport Fitness D.C."
   end
 end
