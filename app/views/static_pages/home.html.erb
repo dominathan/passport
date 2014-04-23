@@ -1,2 +1,33 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<div class="home-page">
+  <div class="row">
+    <div class="title logo" text-align="center">
+      <h1>
+        <%= render 'partials/logo' %>
+      <h1>
+    </div>
+  </div>
+  <div class="introparagraph">
+    <div class="row">
+    <h3>So You've Heard about Our Fitness Trek! <br>Then get ready<br> Whatever info we want.
+    <br>
+  <br>
+<br>
+
+<br></h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span3 offset3">
+      <%= link_to "Interested in Becoming a Partner?", new_potential_partner_path, class: "btn btn-large" %>
+    </div>
+    <div class="">
+      <%= link_to "Interested in Becoming a Member?", new_potential_member_path, class: "btn btn-large" %>
+    </div>
+  </div>
+  <div class="row">
+    <div>
+
+    </div>
+  </div>
+
+</div>
