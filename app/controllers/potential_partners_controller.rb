@@ -28,6 +28,7 @@ class PotentialPartnersController < ApplicationController
 
     respond_to do |format|
       if @potential_partner.save
+        PartnerNotifier.partner_subscription_confirmation(@potential_partner).deliver
         format.html { redirect_to @potential_partner, notice: 'Potential partner was successfully created.' }
         format.json { render :show, status: :created, location: @potential_partner }
       else
