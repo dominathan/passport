@@ -1,0 +1,2 @@
+module PotentialPartnersHelper
+end

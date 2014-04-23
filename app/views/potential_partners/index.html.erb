@@ -1,0 +1,37 @@
+<h1>Listing potential_partners</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Studio name</th>
+      <th>Person to contact</th>
+      <th>Contact number</th>
+      <th>Email</th>
+      <th>Web address</th>
+      <th>How did you hear partner</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @potential_partners.each do |potential_partner| %>
+      <tr>
+        <td><%= potential_partner.studio_name %></td>
+        <td><%= potential_partner.person_to_contact %></td>
+        <td><%= potential_partner.contact_number %></td>
+        <td><%= potential_partner.email %></td>
+        <td><%= potential_partner.web_address %></td>
+        <td><%= potential_partner.how_did_you_hear_partner %></td>
+        <td><%= link_to 'Show', potential_partner %></td>
+        <td><%= link_to 'Edit', edit_potential_partner_path(potential_partner) %></td>
+        <td><%= link_to 'Destroy', potential_partner, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Potential partner', new_potential_partner_path %>

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :potential_partners
+
   resources :potential_members
 
   # The priority is based upon order of creation: first created -> highest priority.
