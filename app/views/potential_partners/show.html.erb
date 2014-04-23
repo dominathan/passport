@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Studio name:</strong>
+  <%= @potential_partner.studio_name %>
+</p>
+
+<p>
+  <strong>Person to contact:</strong>
+  <%= @potential_partner.person_to_contact %>
+</p>
+
+<p>
+  <strong>Contact number:</strong>
+  <%= @potential_partner.contact_number %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @potential_partner.email %>
+</p>
+
+<p>
+  <strong>Web address:</strong>
+  <%= @potential_partner.web_address %>
+</p>
+
+<p>
+  <strong>How did you hear partner:</strong>
+  <%= @potential_partner.how_did_you_hear_partner %>
+</p>
+
+<%= link_to 'Edit', edit_potential_partner_path(@potential_partner) %> |
+<%= link_to 'Back', potential_partners_path %>
