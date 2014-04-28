@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get "static_pages/home"
   get 'home' => 'static_pages#home'
+  root 'static_pages#home'
   resources :potential_partners
 
   resources :potential_members
