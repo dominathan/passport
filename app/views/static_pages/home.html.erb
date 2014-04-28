@@ -1,0 +1,30 @@
+<div class="home-page">
+  <div class="row">
+    <div class="title logo" text-align="center">
+      <h1>
+        <%= render 'partials/logo' %>
+      <h1>
+    </div>
+  </div>
+  <div class="introparagraph">
+    <div class="row">
+    <h3>So You've Heard about Our Fitness Trek! <br>Then get ready<br> Whatever info we want to add in the middle.
+    <br>
+  <br>
+<br>
+
+<br></h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span3 offset3">
+      <div id="partner">
+        <%= link_to "Interested in Becoming a Partner?", new_potential_partner_path, class: "btn btn-large" %>
+      </div>
+    </div>
+    <div id="member">
+      <%= link_to "Interested in Becoming a Member?", new_potential_member_path, class: "btn btn-large" %>
+    </div>
+  </div>
+
+</div>
