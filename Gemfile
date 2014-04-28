@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 gem 'rails', '4.0.2'
-gem 'sqlite3'
+gem 'pg', '~> 0.17.1'
 gem 'hirb' #easy database viewing
 
 #maybe add to assets group later
@@ -27,6 +27,9 @@ gem 'pry-debugger'
 gem 'figaro',     '~> 0.7.0'
 
 
+#added for heroku
+gem 'rails_12factor', group: :production
+
 
 
 
@@ -41,4 +44,4 @@ gem 'figaro',     '~> 0.7.0'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
+ruby '2.0.0'
