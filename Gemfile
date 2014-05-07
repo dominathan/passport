@@ -28,6 +28,7 @@ gem 'figaro',     '~> 0.7.0'
 #for heroku
 gem 'pg'
 gem 'rails_12factor', group: :production
+ruby '2.0.0'
 
 
 
