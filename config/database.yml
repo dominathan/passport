@@ -28,3 +28,7 @@ test:
 #
 production:
   url: <%= ENV["DATABASE_URL"] %>
+  adapter: postgresql
+  database: pfdc_prod
+  pool: 5
+  encoding: unicode
