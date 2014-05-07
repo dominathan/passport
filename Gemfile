@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 
 gem 'rails', '4.0.2'
-gem 'sqlite3'
 gem 'hirb' #easy database viewing
 
 #maybe add to assets group later
@@ -25,6 +24,10 @@ gem 'mandrill_mailer'
 gem 'mandrill-api'
 gem 'pry-debugger'
 gem 'figaro',     '~> 0.7.0'
+
+#for heroku
+gem 'pg'
+gem 'rails_12factor', group: :production
 
 
 
