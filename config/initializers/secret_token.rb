@@ -1,0 +1,3 @@
+PassportFitnessDC::Application.config.secret_key_base = 'adklhsfaldsfjhkaldsjkfhdaslkfhwliuqeah298753428943289fhadhafds'
+
+
