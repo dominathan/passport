@@ -32,8 +32,6 @@ ruby '2.0.0'
 
 
 
-
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -45,4 +43,4 @@ ruby '2.0.0'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
+ruby '2.0.0'

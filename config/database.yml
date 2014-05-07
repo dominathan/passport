@@ -8,6 +8,7 @@ default: &default
   adapter: postgresql
   encoding: unicode
   host: localhost
+  pool: 5
 
 development:
   <<: *default
@@ -28,3 +29,8 @@ test:
 #
 production:
   url: <%= ENV["DATABASE_URL"] %>
+  database: pfdc_prod
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
